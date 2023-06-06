@@ -1,0 +1,48 @@
+2022-08-02 09:14:47.277 +06:00 [INF] Application Starting up
+2022-08-02 09:48:23.152 +06:00 [INF] Application Starting up
+2022-08-02 10:35:31.117 +06:00 [INF] Application Starting up
+2022-08-02 10:36:24.074 +06:00 [ERR] Add doctor Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AddDoctorModel -> Doctor
+HospitalManagement.Areas.Admin.Models.AddDoctorModel -> Hospital.Training.BusinessObjects.Doctor
+   at lambda_method670(Closure , Object , Doctor , ResolutionContext )
+   at HospitalManagement.Areas.Admin.Models.AddDoctorModel.AddDoctor() in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Models\AddDoctorModel.cs:line 39
+   at HospitalManagement.Areas.Admin.Controllers.HospitalController.AddDoctor(AddDoctorModel model) in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Controllers\HospitalController.cs:line 49
+2022-08-02 10:37:30.002 +06:00 [INF] Application Starting up
+2022-08-02 10:37:58.708 +06:00 [ERR] Add doctor Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AddDoctorModel -> Doctor
+HospitalManagement.Areas.Admin.Models.AddDoctorModel -> Hospital.Training.BusinessObjects.Doctor
+   at lambda_method670(Closure , Object , Doctor , ResolutionContext )
+   at HospitalManagement.Areas.Admin.Models.AddDoctorModel.AddDoctor() in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Models\AddDoctorModel.cs:line 39
+   at HospitalManagement.Areas.Admin.Controllers.HospitalController.AddDoctor(AddDoctorModel model) in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Controllers\HospitalController.cs:line 49
+2022-08-02 10:41:52.819 +06:00 [INF] Application Starting up
+2022-08-02 10:46:07.510 +06:00 [INF] Application Starting up
+2022-08-02 10:46:50.897 +06:00 [ERR] Add doctor Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AddDoctorModel -> Doctor
+HospitalManagement.Areas.Admin.Models.AddDoctorModel -> Hospital.Training.BusinessObjects.Doctor
+   at lambda_method670(Closure , Object , Doctor , ResolutionContext )
+   at HospitalManagement.Areas.Admin.Models.AddDoctorModel.AddDoctor() in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Models\AddDoctorModel.cs:line 39
+   at HospitalManagement.Areas.Admin.Controllers.HospitalController.AddDoctor(AddDoctorModel model) in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Controllers\HospitalController.cs:line 49
+2022-08-02 11:07:53.288 +06:00 [INF] Application Starting up
+2022-08-02 11:08:26.537 +06:00 [ERR] Add doctor Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AddDoctorModel -> Doctor
+HospitalManagement.Areas.Admin.Models.AddDoctorModel -> Hospital.Training.BusinessObjects.Doctor
+   at lambda_method623(Closure , Object , Doctor , ResolutionContext )
+   at HospitalManagement.Areas.Admin.Models.AddDoctorModel.AddDoctor() in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Models\AddDoctorModel.cs:line 39
+   at HospitalManagement.Areas.Admin.Controllers.HospitalController.AddDoctor(AddDoctorModel model) in C:\Users\User\Desktop\HospitalManagement\HospitalManagement\HospitalManagement\HospitalManagement\Areas\Admin\Controllers\HospitalController.cs:line 49
+2022-08-02 11:09:12.232 +06:00 [INF] Application Starting up
+2022-08-02 11:12:24.537 +06:00 [INF] Application Starting up
+2022-08-02 11:59:23.022 +06:00 [INF] Application Starting up
+2022-08-02 12:15:09.512 +06:00 [INF] Application Starting up
+2022-08-02 12:17:18.342 +06:00 [INF] Application Starting up

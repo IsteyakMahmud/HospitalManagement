@@ -1,0 +1,71 @@
+﻿@model TestListModel
+@{
+    ViewData["Title"] = "Test List";
+    Layout = "~/Areas/Admin/Views/Shared/_layout2.cshtml";
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+}
+
+@section Scripts
+{
+    <script src="/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#tests').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/Admin/Hospital/GetTestList",
+            });
+        });
+    </script>
+}
+
+<br />
+<br />
+<br />
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">All available tests</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="tests" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Fees</th>
+                                    <th>Id</th>
+                                </tr>
+                            </thead>
+
+                            <tfoot>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Fees</th>
+                                    <th>Id</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+<!-- /.content -->

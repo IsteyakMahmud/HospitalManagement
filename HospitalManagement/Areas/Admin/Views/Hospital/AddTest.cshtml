@@ -1,0 +1,67 @@
+﻿@model AddTestModel
+@{
+    ViewData["Title"] = "AddTest";
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Add A New Test</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Add Test</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Add A New Test</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal" method="post" asp-controller="Hospital"
+                          asp-action="AddTest" asp-antiforgery="true">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label asp-for="Name" class="col-sm-2 col-form-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" asp-for="Name"
+                                           id="test" placeholder="Test Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label asp-for="Fees" class="col-sm-2 col-form-label">Fees</label>
+                                <div class="col-sm-10">
+                                    <input type="number" asp-for="Fees" class="form-control"
+                                           id="fees" placeholder="Fees">
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-info">Add</button>
+                            <a asp-action="ManageTest" asp-controller="Hospital"
+                               class="btn btn-default float-right">Cancel</a>
+                        </div>
+                        <!-- /.card-footer -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

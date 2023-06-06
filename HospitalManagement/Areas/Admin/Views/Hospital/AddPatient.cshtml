@@ -1,0 +1,64 @@
+﻿@model AddPatientModel
+@{
+    ViewData["Title"] = "AddPatient";
+    Layout = "~/Areas/Admin/Views/Shared/_layout2.cshtml";
+}
+<div class="content-wrapper">
+    
+    <br /><br /><br /><br />
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Please give your data</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form class="form-horizontal" method="post" asp-controller="Hospital"
+                              asp-action="AddPatient" asp-antiforgery="true">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <label asp-for="Name" class="col-sm-2 col-form-label">Name</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" asp-for="Name"
+                                               id="patient" placeholder="Patient Name">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label asp-for="Syndrome" class="col-sm-2 col-form-label">Syndrome</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" asp-for="Syndrome" class="form-control"
+                                               id="syndrome" placeholder="Syndrome">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label asp-for="Contact" class="col-sm-2 col-form-label">Contact</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" asp-for="Contact" class="form-control"
+                                               id="contact" placeholder="Contact">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.card-body -->
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-info">Submit</button>
+                                <a asp-action="Index" asp-controller="Hospital"
+                                   class="btn btn-default float-right">Cancel</a>
+                            </div>
+                            <!-- /.card-footer -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
